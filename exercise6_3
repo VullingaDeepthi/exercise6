@@ -1,0 +1,10 @@
+function addArraysUnique(arr1, arr2) 
+  {
+    const uniqueNumbers = new Set([...arr1, ...arr2]);
+    return Array.from(uniqueNumbers);
+  }
+  const array3 = [1, 2, 3, 4];
+  const array4 = [3, 4, 5, 6];
+  const resultArray = addArraysUnique(array3, array4);
+  console.log(resultArray);
+  

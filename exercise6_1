@@ -1,0 +1,19 @@
+function findShortest(arr) {
+    if (arr.length === 0) {
+      return "Array is empty";
+    }
+  
+    let shortest = arr[0];
+  
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] < shortest) {
+        shortest = arr[i];
+      }
+    }
+  
+    return "Shortest number = " + shortest;
+  }
+  
+  const inputArray = [4, 1, 2, 3];
+  const output = findShortest(inputArray);
+  console.log(output);
